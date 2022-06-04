@@ -30,16 +30,20 @@ namespace IIS.Carsharing
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("CarE", new string[] {
             "CarModel as \'Car model\'",
-            "CarNumber as \'Car number\'"})]
+            "CarNumber as \'Car number\'",
+            "CarOdometer as \'Car odometer\'"})]
     [View("CarL", new string[] {
             "CarModel as \'Car model\'",
-            "CarNumber as \'Car number\'"})]
+            "CarNumber as \'Car number\'",
+            "CarOdometer as \'Car odometer\'"})]
     public class Car : ICSSoft.STORMNET.DataObject
     {
         
         private IIS.Carsharing.tModel fCarModel;
         
         private string fCarNumber;
+        
+        private int fCarOdometer;
         
         // *** Start programmer edit section *** (Car CustomMembers)
 
@@ -106,6 +110,37 @@ namespace IIS.Carsharing
                 // *** Start programmer edit section *** (Car.CarNumber Set end)
 
                 // *** End programmer edit section *** (Car.CarNumber Set end)
+            }
+        }
+        
+        /// <summary>
+        /// CarOdometer.
+        /// </summary>
+        // *** Start programmer edit section *** (Car.CarOdometer CustomAttributes)
+
+        // *** End programmer edit section *** (Car.CarOdometer CustomAttributes)
+        public virtual int CarOdometer
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Car.CarOdometer Get start)
+
+                // *** End programmer edit section *** (Car.CarOdometer Get start)
+                int result = this.fCarOdometer;
+                // *** Start programmer edit section *** (Car.CarOdometer Get end)
+
+                // *** End programmer edit section *** (Car.CarOdometer Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Car.CarOdometer Set start)
+
+                // *** End programmer edit section *** (Car.CarOdometer Set start)
+                this.fCarOdometer = value;
+                // *** Start programmer edit section *** (Car.CarOdometer Set end)
+
+                // *** End programmer edit section *** (Car.CarOdometer Set end)
             }
         }
         

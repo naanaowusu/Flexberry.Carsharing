@@ -23,6 +23,15 @@
       "defaultValue": "",
       "stored": true,
       "ordered": false
+    },
+    {
+      "name": "carOdometer",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
     }
   ],
   "belongsTo": [],
@@ -43,6 +52,12 @@
           "caption": "Car number",
           "hidden": false,
           "index": 1
+        },
+        {
+          "name": "carOdometer",
+          "caption": "Car odometer",
+          "hidden": false,
+          "index": 2
         }
       ],
       "belongsTo": [],
@@ -63,6 +78,12 @@
           "caption": "Car number",
           "hidden": false,
           "index": 1
+        },
+        {
+          "name": "carOdometer",
+          "caption": "Car odometer",
+          "hidden": false,
+          "index": 2
         }
       ],
       "belongsTo": [],

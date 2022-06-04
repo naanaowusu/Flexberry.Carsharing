@@ -35,12 +35,6 @@ namespace IIS.Carsharing
         [Caption("Hyundai")]
         Hyundai,
         
-        // *** Start programmer edit section *** (tModel.Benz CustomAttributes)
-
-        // *** End programmer edit section *** (tModel.Benz CustomAttributes)
-        [Caption("Benz")]
-        Benz,
-        
         // *** Start programmer edit section *** (tModel.VM CustomAttributes)
 
         // *** End programmer edit section *** (tModel.VM CustomAttributes)
@@ -52,5 +46,11 @@ namespace IIS.Carsharing
         // *** End programmer edit section *** (tModel.Renaut CustomAttributes)
         [Caption("Renaut")]
         Renaut,
+        
+        // *** Start programmer edit section *** (tModel.Benz CustomAttributes)
+
+        // *** End programmer edit section *** (tModel.Benz CustomAttributes)
+        [Caption("Benz")]
+        Benz,
     }
 }

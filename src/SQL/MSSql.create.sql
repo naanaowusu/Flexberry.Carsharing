@@ -21,8 +21,6 @@ CREATE TABLE [Rent] (
 
 	 [EndOfRent] DATETIME  NULL,
 
-	 [Duration] FLOAT  NULL,
-
 	 [PricePlan] VARCHAR(12)  NULL,
 
 	 [RentedCar_m0] UNIQUEIDENTIFIER  NOT NULL,
@@ -52,6 +50,8 @@ CREATE TABLE [Car] (
 	 [CarModel] VARCHAR(7)  NULL,
 
 	 [CarNumber] VARCHAR(255)  NULL,
+
+	 [CarOdometer] INT  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

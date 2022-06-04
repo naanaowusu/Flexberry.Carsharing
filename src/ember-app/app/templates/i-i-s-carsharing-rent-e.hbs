@@ -46,16 +46,6 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "endOfRent" "message")}}
   </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=readonly
-      value=model.duration
-      class=(if (v-get validationModel "duration" "isInvalid") "error")
-      label=(t "forms.i-i-s-carsharing-rent-e.duration-caption")
-      data-test-i-i-s-carsharing-rent-e-duration=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "duration" "message")}}
-  </div>
   <div class="field" data-test-i-i-s-carsharing-rent-e-pricePlan="true">
     <label>{{t "forms.i-i-s-carsharing-rent-e.pricePlan-caption"}}</label>
     {{flexberry-dropdown

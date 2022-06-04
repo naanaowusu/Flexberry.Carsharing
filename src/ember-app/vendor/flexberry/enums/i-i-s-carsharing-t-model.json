@@ -3,8 +3,8 @@
   "className": "tModel",
   "enumObjects": {
     "Hyundai": "Hyundai",
-    "Benz": "Benz",
     "VM": "VM Polo",
-    "Renaut": "Renaut"
+    "Renaut": "Renaut",
+    "Benz": "Benz"
   }
 }

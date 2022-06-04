@@ -14,7 +14,6 @@ CREATE TABLE Rent (
  primaryKey UUID NOT NULL,
  StartOfRent TIMESTAMP(3) NULL,
  EndOfRent TIMESTAMP(3) NULL,
- Duration DOUBLE PRECISION NULL,
  PricePlan VARCHAR(12) NULL,
  RentedCar_m0 UUID NOT NULL,
  DropAt_m0 UUID NOT NULL,
@@ -33,6 +32,7 @@ CREATE TABLE Car (
  primaryKey UUID NOT NULL,
  CarModel VARCHAR(7) NULL,
  CarNumber VARCHAR(255) NULL,
+ CarOdometer INT NULL,
  PRIMARY KEY (primaryKey));
 
 

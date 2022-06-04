@@ -7,9 +7,6 @@ export default {
       endOfRent: {
         __caption__: 'End of rent'
       },
-      duration: {
-        __caption__: 'Duration'
-      },
       pricePlan: {
         __caption__: 'Price plan'
       },
@@ -30,6 +27,9 @@ export default {
         address: {
           __caption__: 'Address'
         }
+      },
+      duration: {
+        __caption__: 'Duration'
       }
     },
     RentL: {
@@ -38,9 +38,6 @@ export default {
       },
       endOfRent: {
         __caption__: 'End of rent'
-      },
-      duration: {
-        __caption__: 'Duration'
       },
       pricePlan: {
         __caption__: 'Price plan'
@@ -62,6 +59,9 @@ export default {
         address: {
           __caption__: 'Address'
         }
+      },
+      duration: {
+        __caption__: 'Duration'
       }
     }
   },
@@ -71,9 +71,6 @@ export default {
     },
     endOfRent: {
       __caption__: 'End of rent'
-    },
-    duration: {
-      __caption__: 'Duration'
     },
     pricePlan: {
       __caption__: 'Price plan'
@@ -86,6 +83,9 @@ export default {
     },
     rentAt: {
       __caption__: 'Rent at'
+    },
+    duration: {
+      __caption__: 'Duration'
     }
   }
 };

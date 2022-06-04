@@ -22,25 +22,25 @@ export default Controller.extend({
             link: 'i-i-s-carsharing-park-l',
             caption: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-park-l.caption'),
             title: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-park-l.title'),
-            icon: 'list',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-carsharing-rent-l',
             caption: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-rent-l.caption'),
             title: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-rent-l.title'),
-            icon: 'suitcase',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-carsharing-city-l',
             caption: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-city-l.caption'),
             title: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-city-l.title'),
-            icon: 'suitcase',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-carsharing-car-l',
             caption: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-car-l.caption'),
             title: i18n.t('forms.application.sitemap.carsharing.i-i-s-carsharing-car-l.title'),
-            icon: 'folder open',
+            icon: 'briefcase',
             children: null
           }]
         }

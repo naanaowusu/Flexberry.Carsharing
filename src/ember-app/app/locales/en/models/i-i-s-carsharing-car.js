@@ -6,6 +6,9 @@ export default {
       },
       carNumber: {
         __caption__: 'Car number'
+      },
+      carOdometer: {
+        __caption__: 'Car odometer'
       }
     },
     CarL: {
@@ -14,6 +17,9 @@ export default {
       },
       carNumber: {
         __caption__: 'Car number'
+      },
+      carOdometer: {
+        __caption__: 'Car odometer'
       }
     }
   },
@@ -23,6 +29,9 @@ export default {
     },
     carNumber: {
       __caption__: 'Car number'
+    },
+    carOdometer: {
+      __caption__: 'Car odometer'
     }
   }
 };

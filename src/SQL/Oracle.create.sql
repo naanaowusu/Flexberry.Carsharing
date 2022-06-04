@@ -24,8 +24,6 @@ CREATE TABLE "Rent"
 
 	"EndOfRent" DATE NULL,
 
-	"Duration" FLOAT(126) NULL,
-
 	"PricePlan" NVARCHAR2(12) NULL,
 
 	"RentedCar_m0" RAW(16) NOT NULL,
@@ -59,6 +57,8 @@ CREATE TABLE "Car"
 	"CarModel" NVARCHAR2(7) NULL,
 
 	"CarNumber" NVARCHAR2(255) NULL,
+
+	"CarOdometer" NUMBER(10) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;

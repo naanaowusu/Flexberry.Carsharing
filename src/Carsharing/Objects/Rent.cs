@@ -31,7 +31,6 @@ namespace IIS.Carsharing
     [View("RentE", new string[] {
             "StartOfRent as \'Start of rent\'",
             "EndOfRent as \'End of rent\'",
-            "Duration as \'Duration\'",
             "PricePlan as \'Price plan\'",
             "RentedCar as \'Rented car\'",
             "RentedCar.CarNumber as \'Car number\'",
@@ -48,7 +47,6 @@ namespace IIS.Carsharing
     [View("RentL", new string[] {
             "StartOfRent as \'Start of rent\'",
             "EndOfRent as \'End of rent\'",
-            "Duration as \'Duration\'",
             "PricePlan as \'Price plan\'",
             "RentedCar.CarNumber as \'Car number\'",
             "DropAt.Address as \'Address\'",
@@ -59,8 +57,6 @@ namespace IIS.Carsharing
         private System.DateTime fStartOfRent;
         
         private System.DateTime fEndOfRent;
-        
-        private double fDuration;
         
         private IIS.Carsharing.tPlan fPricePlan;
         
@@ -134,37 +130,6 @@ namespace IIS.Carsharing
                 // *** Start programmer edit section *** (Rent.EndOfRent Set end)
 
                 // *** End programmer edit section *** (Rent.EndOfRent Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Duration.
-        /// </summary>
-        // *** Start programmer edit section *** (Rent.Duration CustomAttributes)
-
-        // *** End programmer edit section *** (Rent.Duration CustomAttributes)
-        public virtual double Duration
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Rent.Duration Get start)
-
-                // *** End programmer edit section *** (Rent.Duration Get start)
-                double result = this.fDuration;
-                // *** Start programmer edit section *** (Rent.Duration Get end)
-
-                // *** End programmer edit section *** (Rent.Duration Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Rent.Duration Set start)
-
-                // *** End programmer edit section *** (Rent.Duration Set start)
-                this.fDuration = value;
-                // *** Start programmer edit section *** (Rent.Duration Set end)
-
-                // *** End programmer edit section *** (Rent.Duration Set end)
             }
         }
         
