@@ -1,0 +1,123 @@
+<h3 class="ui header">{{t "forms.i-i-s-carsharing-rent-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.startOfRent-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.startOfRent
+      class=(if (v-get validationModel "startOfRent" "isInvalid") "error")
+      data-test-i-i-s-carsharing-rent-e-startOfRent=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "startOfRent" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.endOfRent-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.endOfRent
+      class=(if (v-get validationModel "endOfRent" "isInvalid") "error")
+      data-test-i-i-s-carsharing-rent-e-endOfRent=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "endOfRent" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.duration
+      class=(if (v-get validationModel "duration" "isInvalid") "error")
+      label=(t "forms.i-i-s-carsharing-rent-e.duration-caption")
+      data-test-i-i-s-carsharing-rent-e-duration=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "duration" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-carsharing-rent-e-pricePlan="true">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.pricePlan-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-carsharing-t-plan")
+      value=model.pricePlan
+      class=(if (v-get validationModel "pricePlan" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "pricePlan" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.rentedCar-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.rentedCar
+      displayAttributeName="carNumber"
+      autocomplete=true
+      relationName="rentedCar"
+      projection="CarL"
+      title=(t "forms.i-i-s-carsharing-rent-e.rentedCar-caption")
+      readonly=readonly
+      componentName="rentedCarLookup"
+      class=(if (v-get validationModel "rentedCar" "isInvalid") "error")
+      data-test-i-i-s-carsharing-rent-e-rentedCar=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "rentedCar" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.dropAt-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.dropAt
+      displayAttributeName="address"
+      autocomplete=true
+      relationName="dropAt"
+      projection="ParkL"
+      title=(t "forms.i-i-s-carsharing-rent-e.dropAt-caption")
+      readonly=readonly
+      componentName="dropAtLookup"
+      class=(if (v-get validationModel "dropAt" "isInvalid") "error")
+      data-test-i-i-s-carsharing-rent-e-dropAt=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "dropAt" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-carsharing-rent-e.rentAt-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.rentAt
+      displayAttributeName="address"
+      autocomplete=true
+      relationName="rentAt"
+      projection="ParkL"
+      title=(t "forms.i-i-s-carsharing-rent-e.rentAt-caption")
+      readonly=readonly
+      componentName="rentAtLookup"
+      class=(if (v-get validationModel "rentAt" "isInvalid") "error")
+      data-test-i-i-s-carsharing-rent-e-rentAt=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "rentAt" "message")}}
+  </div>
+</form>

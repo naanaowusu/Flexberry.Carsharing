@@ -1,0 +1,47 @@
+<h3 class="ui header">{{t "forms.i-i-s-carsharing-car-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field" data-test-i-i-s-carsharing-car-e-carModel="true">
+    <label>{{t "forms.i-i-s-carsharing-car-e.carModel-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-carsharing-t-model")
+      value=model.carModel
+      class=(if (v-get validationModel "carModel" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "carModel" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.carNumber
+      class=(if (v-get validationModel "carNumber" "isInvalid") "error")
+      label=(t "forms.i-i-s-carsharing-car-e.carNumber-caption")
+      data-test-i-i-s-carsharing-car-e-carNumber=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "carNumber" "message")}}
+  </div>
+</form>

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "City",
+      "projection": "CityL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Park",
+  "name": "IISCarsharingParkE",
+  "className": "ParkE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-park",
+      "modelProjection": "ParkE"
+    }
+  ]
+}

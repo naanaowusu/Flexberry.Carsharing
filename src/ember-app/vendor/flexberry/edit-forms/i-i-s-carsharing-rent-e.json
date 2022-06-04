@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "RentedCar",
+      "projection": "CarL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "DropAt",
+      "projection": "ParkL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "RentAt",
+      "projection": "ParkL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Rent",
+  "name": "IISCarsharingRentE",
+  "className": "RentE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-rent",
+      "modelProjection": "RentE"
+    }
+  ]
+}

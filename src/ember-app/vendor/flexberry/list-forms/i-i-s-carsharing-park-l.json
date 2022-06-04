@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-carsharing-park-e",
+  "editForm": "i-i-s-carsharing-park-e",
+  "external": false,
+  "caption": "Park",
+  "name": "IISCarsharingParkL",
+  "className": "ParkL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-park",
+      "modelProjection": "ParkL"
+    }
+  ]
+}

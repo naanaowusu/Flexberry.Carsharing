@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISCarsharingCity",
+  "modelName": "i-i-s-carsharing-city",
+  "className": "City",
+  "nameSpace": "IIS.Carsharing",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "car",
+      "relatedTo": "i-i-s-carsharing-car",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CityE",
+      "modelName": "i-i-s-carsharing-city",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "CarNumber",
+          "lookupValueField": "carNumber",
+          "relationName": "Car",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "carNumber",
+              "caption": "Car number",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Car",
+          "name": "car",
+          "relatedTo": "i-i-s-carsharing-car",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "CityL",
+      "modelName": "i-i-s-carsharing-city",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Car",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "carNumber",
+              "caption": "Car number",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Car number",
+          "name": "car",
+          "relatedTo": "i-i-s-carsharing-car",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

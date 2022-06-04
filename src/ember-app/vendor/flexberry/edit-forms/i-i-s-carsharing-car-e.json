@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Car",
+  "name": "IISCarsharingCarE",
+  "className": "CarE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-car",
+      "modelProjection": "CarE"
+    }
+  ]
+}

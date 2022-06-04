@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Carsharing",
+  "className": "tModel",
+  "enumObjects": {
+    "Hyundai": "Hyundai",
+    "Benz": "Benz",
+    "VM": "VM Polo",
+    "Renaut": "Renaut"
+  }
+}

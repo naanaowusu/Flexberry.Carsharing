@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-carsharing-city-e",
+  "editForm": "i-i-s-carsharing-city-e",
+  "external": false,
+  "caption": "City",
+  "name": "IISCarsharingCityL",
+  "className": "CityL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-city",
+      "modelProjection": "CityL"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Carsharing",
+  "applicationTitle": "Carsharing",
+  "items": [
+    {
+      "link": null,
+      "menuName": "carsharing",
+      "caption": "Carsharing",
+      "title": "Carsharing",
+      "children": [
+        {
+          "link": "i-i-s-carsharing-park-l",
+          "menuName": null,
+          "caption": "Park",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-carsharing-rent-l",
+          "menuName": null,
+          "caption": "Rent",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-carsharing-city-l",
+          "menuName": null,
+          "caption": "City",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-carsharing-car-l",
+          "menuName": null,
+          "caption": "Car",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

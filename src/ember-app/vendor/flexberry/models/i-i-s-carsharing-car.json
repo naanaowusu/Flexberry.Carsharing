@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISCarsharingCar",
+  "modelName": "i-i-s-carsharing-car",
+  "className": "Car",
+  "nameSpace": "IIS.Carsharing",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "carModel",
+      "type": "i-i-s-carsharing-t-model",
+      "flexberryType": "tModel",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "carNumber",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CarE",
+      "modelName": "i-i-s-carsharing-car",
+      "attrs": [
+        {
+          "name": "carModel",
+          "caption": "Car model",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "carNumber",
+          "caption": "Car number",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "CarL",
+      "modelName": "i-i-s-carsharing-car",
+      "attrs": [
+        {
+          "name": "carModel",
+          "caption": "Car model",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "carNumber",
+          "caption": "Car number",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

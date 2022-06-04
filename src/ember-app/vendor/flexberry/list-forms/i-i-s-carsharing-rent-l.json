@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-carsharing-rent-e",
+  "editForm": "i-i-s-carsharing-rent-e",
+  "external": false,
+  "caption": "Rent",
+  "name": "IISCarsharingRentL",
+  "className": "RentL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-carsharing-rent",
+      "modelProjection": "RentL"
+    }
+  ]
+}

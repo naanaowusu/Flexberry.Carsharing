@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Carsharing",
+  "className": "tPlan",
+  "enumObjects": {
+    "Per": "Per Minute",
+    "Rent": "Rent for Day"
+  }
+}

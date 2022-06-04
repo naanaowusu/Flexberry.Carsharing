@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carsharing.Objects", "Objects/Carsharing.Objects.csproj", "{BE9C805D-8D6F-4E1C-AB9C-ADF9F00C9F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carsharing.ODataBackend", "ODataBackend/Carsharing.ODataBackend.csproj", "{C56F410F-C64E-4F69-B749-CD1693988399}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE9C805D-8D6F-4E1C-AB9C-ADF9F00C9F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9C805D-8D6F-4E1C-AB9C-ADF9F00C9F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9C805D-8D6F-4E1C-AB9C-ADF9F00C9F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9C805D-8D6F-4E1C-AB9C-ADF9F00C9F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56F410F-C64E-4F69-B749-CD1693988399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56F410F-C64E-4F69-B749-CD1693988399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56F410F-C64E-4F69-B749-CD1693988399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56F410F-C64E-4F69-B749-CD1693988399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
